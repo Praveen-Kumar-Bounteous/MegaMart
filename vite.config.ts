@@ -3,11 +3,9 @@ import tailwindcss from "@tailwindcss/vite";
 import react from "@vitejs/plugin-react";
 import { defineConfig } from "vite";
 
-// Replace REPO_NAME with your GitHub repo name
-const REPO_NAME = "MegaMart";
 
 export default defineConfig({
-  base: `/${REPO_NAME}/`, 
+  base: "/",
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
@@ -15,3 +13,4 @@ export default defineConfig({
     },
   },
 });
+
