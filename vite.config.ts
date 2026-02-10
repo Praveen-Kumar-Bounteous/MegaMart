@@ -4,7 +4,7 @@ import react from "@vitejs/plugin-react";
 import { defineConfig } from "vite";
 
 // Replace REPO_NAME with your GitHub repo name
-const REPO_NAME = "praveen-kumar-bounteous";
+const REPO_NAME = "MegaMart";
 
 export default defineConfig({
   base: `/${REPO_NAME}/`, 
