@@ -18,7 +18,7 @@ interface CardInfo {
 }
 
 const CheckoutPage: React.FC = () => {
-  const { cart, cartCount } = useCart();
+  const { cart } = useCart();
   const navigate = useNavigate();
 
   const [customer, setCustomer] = useState<CustomerInfo>({

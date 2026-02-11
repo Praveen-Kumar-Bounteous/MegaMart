@@ -11,7 +11,7 @@ const LandingPage: React.FC = () => {
   const navigate = useNavigate();
   if (!auth) throw new Error("AuthContext not found");
 
-  const { user } = auth;
+  // const { user } = auth;
 
   const [products, setProducts] = useState<Product[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
@@ -32,16 +32,16 @@ const LandingPage: React.FC = () => {
     getProducts();
   }, []);
 
-  const handleAddToCart = (product: Product) => {
-    if (!user) {
-      toast.error("Please login to add items to cart");
-      navigate("/login");
-      return;
-    }
-    navigate("/products");
-    // Later you can connect this to CartContext
-    toast.success(`${product.title} added to cart`);
-  };
+  // const handleAddToCart = (product: Product) => {
+  //   if (!user) {
+  //     toast.error("Please login to add items to cart");
+  //     navigate("/login");
+  //     return;
+  //   }
+  //   navigate("/products");
+  //   // Later you can connect this to CartContext
+  //   toast.success(`${product.title} added to cart`);
+  // };
 
   return (
     <div className="min-h-screen bg-white">
